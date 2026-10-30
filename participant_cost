@@ -1,0 +1,7 @@
+# event-budget mainly on participant cost of the event
+what it returns: calculates the total variables cost per attendee (food + transport) multiplied by the number of attendees. returns an integer.
+Test run: Normal attendee count (10, 800, 200)-> expected 100000, actual 10000. zero attendee (0, 8000, 200) -> expected 0,actual 0.
+any assumption or unresolved issue: none. assumes all inputs are non negative numbers.
+
+
+
