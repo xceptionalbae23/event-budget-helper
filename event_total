@@ -1,0 +1,18 @@
+def event_total(attendees, food_per_person, transport_per_person, venue_cost):
+    people_cost =(attendees, food_per_person, transport_per_person)
+    combined_total = people_cost + venue_cost
+    return combined_total
+
+total = event_total (10, 800, 200, 5000)
+print (total)
+
+print("/n------  Testing event_total")
+
+normal_total = event_total (10, 800, 200, 5000)
+print(f"Normal:         Expected 15000 |  Actual  :  {normal_total}")
+
+# zero attendance with a non zero venue
+
+zero_total = event_total (0, 800, 5000)
+
+print(f"zero attendance:    Expected 5000   |   Actual  :  {zero_total}")
